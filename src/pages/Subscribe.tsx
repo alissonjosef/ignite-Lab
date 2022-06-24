@@ -1,4 +1,5 @@
 import { gql, useMutation } from "@apollo/client";
+import { Calendar, Ticket } from "phosphor-react";
 import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
@@ -41,6 +42,18 @@ export function Subscribe() {
                     <p className="mt-4 text-gray-200 leading-relaxed">
                     Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.
                     </p>
+
+                    <div className="pt-10 flex">
+                        <div className="pr-6 flex justify-center items-center">
+                            <Calendar size={60}/>
+                            <p className="flex justify-center text-xl pl-4">De 20 a 26 de junho</p>
+                        </div>
+
+                        <div className="pr-6 flex justify-center items-center">
+                            <Ticket size={60}/>
+                            <p className="flex justify-center text-xl pl-4">Evento inéditos, online e gratuito</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="p-8 bg-gray-700 border border-gray-500 rounded">
